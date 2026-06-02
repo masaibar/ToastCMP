@@ -1,0 +1,26 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: gradle/actions/setup-gradle@v4
+      - name: Build Android library
+        run: ./gradlew :toast:assemble
+      - name: Run Android host tests
+        run: ./gradlew :toast:testAndroidHostTest
+      - name: Compile iOS (simulator)
+        run: ./gradlew :toast:compileKotlinIosSimulatorArm64
+      - name: Run tests (iOS simulator)
+        run: ./gradlew :toast:iosSimulatorArm64Test
