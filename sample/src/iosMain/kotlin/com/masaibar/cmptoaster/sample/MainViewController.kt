@@ -1,4 +1,4 @@
-package com.masaibar.toastcmp.sample
+package com.masaibar.cmptoaster.sample
 
 import androidx.compose.ui.window.ComposeUIViewController
 import platform.UIKit.UIViewController

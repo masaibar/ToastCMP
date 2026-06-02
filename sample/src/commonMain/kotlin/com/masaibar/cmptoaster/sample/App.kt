@@ -1,4 +1,4 @@
-package com.masaibar.toastcmp.sample
+package com.masaibar.cmptoaster.sample
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -27,9 +27,9 @@ import androidx.compose.ui.backhandler.BackHandler
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import com.masaibar.toastcmp.Toast
-import com.masaibar.toastcmp.ToastDuration
-import com.masaibar.toastcmp.rememberToast
+import com.masaibar.cmptoaster.Toast
+import com.masaibar.cmptoaster.ToastDuration
+import com.masaibar.cmptoaster.rememberToast
 
 private enum class Screen { Home, Second }
 
@@ -81,7 +81,7 @@ private fun HomeScreen(
     horizontalAlignment = Alignment.CenterHorizontally
   ) {
     Text(
-      text = "ToastCMP Sample",
+      text = "CMPToaster Sample",
       style = MaterialTheme.typography.headlineMedium
     )
 

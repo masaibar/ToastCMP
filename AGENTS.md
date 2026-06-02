@@ -2,9 +2,9 @@
 
 ## Project Structure & Module Organization
 
-ToastCMP is a small Kotlin Multiplatform library with one Gradle module, `:toast`.
+CMPToaster is a small Kotlin Multiplatform library with one Gradle module, `:toast`.
 
-- `toast/src/commonMain/kotlin/io/github/masaibar/toastcmp/` contains the shared public API (`Toast`, `ToastDuration`, `rememberToast`).
+- `toast/src/commonMain/kotlin/com/masaibar/cmptoaster/` contains the shared public API (`Toast`, `ToastDuration`, `rememberToast`).
 - `toast/src/androidMain/kotlin/...` contains Android-specific implementations that delegate to `android.widget.Toast`.
 - `toast/src/iosMain/kotlin/...` contains iOS-specific native overlay behavior.
 - `toast/src/androidUnitTest/kotlin/...` contains JVM/Robolectric unit tests.
@@ -22,13 +22,13 @@ Before opening a PR, run the relevant command for the platform you touched; for 
 
 ## Coding Style & Naming Conventions
 
-Use Kotlin official style with 2-space indentation, matching the existing Gradle and Kotlin files. Keep APIs minimal and platform behavior behind `expect`/`actual` declarations. Public types use `PascalCase`; functions, properties, and test methods use `camelCase`. Keep package paths under `com.masaibar.toastcmp`.
+Use Kotlin official style with 2-space indentation, matching the existing Gradle and Kotlin files. Keep APIs minimal and platform behavior behind `expect`/`actual` declarations. Public types use `PascalCase`; functions, properties, and test methods use `camelCase`. Keep package paths under `com.masaibar.cmptoaster`.
 
 Avoid new third-party dependencies unless they are necessary for the library API or tests. Public API changes should update KDoc and `README.md` examples.
 
 ## Testing Guidelines
 
-Tests currently use JUnit 4 and Robolectric in `androidHostTest`. Name test files after the behavior or type under test, for example `AndroidToastTest.kt`. Add or update tests when behavior changes, especially around threading, duration mapping, and Android toast delegation. For iOS changes, run the iOS compile task at minimum because there is no simulator test job in CI.
+Tests currently use JUnit 4 and Robolectric in `androidUnitTest`. Name test files after the behavior or type under test, for example `AndroidToastTest.kt`. Add or update tests when behavior changes, especially around threading, duration mapping, and Android toast delegation. For iOS changes, run the iOS compile task at minimum because there is no simulator test job in CI.
 
 ## Commit & Pull Request Guidelines
 

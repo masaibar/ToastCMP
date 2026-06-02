@@ -41,11 +41,11 @@ kotlin {
 }
 
 android {
-  namespace = "com.masaibar.toastcmp.sample"
+  namespace = "com.masaibar.cmptoaster.sample"
   compileSdk = libs.versions.android.compileSdk.get().toInt()
 
   defaultConfig {
-    applicationId = "com.masaibar.toastcmp.sample"
+    applicationId = "com.masaibar.cmptoaster.sample"
     minSdk = libs.versions.android.minSdk.get().toInt()
     targetSdk = libs.versions.android.compileSdk.get().toInt()
     versionCode = 1

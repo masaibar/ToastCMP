@@ -1,4 +1,4 @@
-rootProject.name = "ToastCMP"
+rootProject.name = "CMPToaster"
 
 pluginManagement {
   repositories {

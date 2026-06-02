@@ -230,7 +230,7 @@
 					"-framework",
 					SampleApp,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.masaibar.toastcmp.sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.masaibar.cmptoaster.sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -267,7 +267,7 @@
 					"-framework",
 					SampleApp,
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.masaibar.toastcmp.sample";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.masaibar.cmptoaster.sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

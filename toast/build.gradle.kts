@@ -20,7 +20,7 @@ kotlin {
     iosSimulatorArm64()
   ).forEach { iosTarget ->
     iosTarget.binaries.framework {
-      baseName = "ToastCMP"
+      baseName = "CMPToaster"
       isStatic = true
     }
   }
@@ -43,7 +43,7 @@ kotlin {
 }
 
 android {
-  namespace = "com.masaibar.toastcmp"
+  namespace = "com.masaibar.cmptoaster"
   compileSdk = libs.versions.android.compileSdk.get().toInt()
 
   defaultConfig {
@@ -63,12 +63,12 @@ android {
 }
 
 mavenPublishing {
-  coordinates("com.masaibar", "toast-cmp", "1.0.0")
+  coordinates("com.masaibar", "cmp-toaster", "1.0.0")
   pom {
-    name.set("ToastCMP")
+    name.set("CMPToaster")
     description.set("A tiny Android-style toast for Compose Multiplatform (Android + iOS).")
     inceptionYear.set("2026")
-    url.set("https://github.com/masaibar/ToastCMP")
+    url.set("https://github.com/masaibar/CMPToaster")
     licenses {
       license {
         name.set("MIT License")
@@ -83,9 +83,9 @@ mavenPublishing {
       }
     }
     scm {
-      url.set("https://github.com/masaibar/ToastCMP")
-      connection.set("scm:git:git://github.com/masaibar/ToastCMP.git")
-      developerConnection.set("scm:git:ssh://git@github.com/masaibar/ToastCMP.git")
+      url.set("https://github.com/masaibar/CMPToaster")
+      connection.set("scm:git:git://github.com/masaibar/CMPToaster.git")
+      developerConnection.set("scm:git:ssh://git@github.com/masaibar/CMPToaster.git")
     }
   }
 }

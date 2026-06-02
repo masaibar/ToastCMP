@@ -1,4 +1,4 @@
-package com.masaibar.toastcmp
+package com.masaibar.cmptoaster
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

@@ -1,6 +1,6 @@
 @file:Suppress("EXPECT_ACTUAL_CLASSIFIERS_ARE_IN_BETA_WARNING")
 
-package com.masaibar.toastcmp
+package com.masaibar.cmptoaster
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember

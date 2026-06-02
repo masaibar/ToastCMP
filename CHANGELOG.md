@@ -18,5 +18,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   that survives screen transitions and never blocks touches.
 - `ToastDuration` (`SHORT` / `LONG`).
 
-[Unreleased]: https://github.com/masaibar/ToastCMP/compare/v1.0.0...HEAD
-[1.0.0]: https://github.com/masaibar/ToastCMP/releases/tag/v1.0.0
+[Unreleased]: https://github.com/masaibar/CMPToaster/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/masaibar/CMPToaster/releases/tag/v1.0.0

@@ -1,4 +1,4 @@
-package com.masaibar.toastcmp.sample
+package com.masaibar.cmptoaster.sample
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

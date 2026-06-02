@@ -1,13 +1,13 @@
 # Contributing
 
-Thanks for your interest in improving `ToastCMP`! Contributions of
+Thanks for your interest in improving `CMPToaster`! Contributions of
 all sizes are welcome — bug reports, docs, and code.
 
 ## Getting started
 
 ```bash
-git clone https://github.com/masaibar/ToastCMP.git
-cd ToastCMP
+git clone https://github.com/masaibar/CMPToaster.git
+cd CMPToaster
 ./gradlew :toast:assemble                        # Android library
 ./gradlew :toast:testDebugUnitTest               # Android unit tests (Robolectric, JVM)
 ./gradlew :toast:compileKotlinIosSimulatorArm64  # iOS compile check

@@ -1,7 +1,7 @@
-# ToastCMP
+# CMPToaster
 
-[![build](https://github.com/masaibar/ToastCMP/actions/workflows/build.yml/badge.svg)](https://github.com/masaibar/ToastCMP/actions/workflows/build.yml)
-[![Maven Central](https://img.shields.io/maven-central/v/com.masaibar/toast-cmp.svg?label=Maven%20Central)](https://central.sonatype.com/artifact/com.masaibar/toast-cmp)
+[![build](https://github.com/masaibar/CMPToaster/actions/workflows/build.yml/badge.svg)](https://github.com/masaibar/CMPToaster/actions/workflows/build.yml)
+[![Maven Central](https://img.shields.io/maven-central/v/com.masaibar/cmp-toaster.svg?label=Maven%20Central)](https://central.sonatype.com/artifact/com.masaibar/cmp-toaster)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.1.21-blue.svg?logo=kotlin)
 ![Platforms](https://img.shields.io/badge/Platforms-Android%20%7C%20iOS-brightgreen.svg)
@@ -17,13 +17,13 @@ native `android.widget.Toast`.
 - ✅ Zero third-party dependencies (only Compose runtime)
 - ✅ Safe to call from any thread
 
-## Why ToastCMP?
+## Why CMPToaster?
 
 Most Compose Multiplatform toast libraries **draw** the toast inside the Compose tree
 (a `Popup`/overlay). That ties the toast to the composition: it can be covered by native
 dialogs, and it only survives navigation if you host it at the app root.
 
-ToastCMP takes a different route. The API is Compose-friendly (`rememberToast()`), but the
+CMPToaster takes a different route. The API is Compose-friendly (`rememberToast()`), but the
 toast itself is rendered **natively**:
 
 - **iOS** — presented on a dedicated `UIWindow` at `UIWindowLevelAlert + 1`. So it:
@@ -45,7 +45,7 @@ In short: a Compose API, with native behavior that "just shows" — on top of yo
 kotlin {
   sourceSets {
     commonMain.dependencies {
-      implementation("com.masaibar:toast-cmp:1.0.0")
+      implementation("com.masaibar:cmp-toaster:1.0.0")
     }
   }
 }
@@ -61,8 +61,8 @@ kotlin {
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import com.masaibar.toastcmp.ToastDuration
-import com.masaibar.toastcmp.rememberToast
+import com.masaibar.cmptoaster.ToastDuration
+import com.masaibar.cmptoaster.rememberToast
 
 @Composable
 fun Demo() {
