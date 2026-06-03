@@ -6,7 +6,7 @@
 ![Kotlin](https://img.shields.io/badge/Kotlin-2.1.21-blue.svg?logo=kotlin)
 ![Platforms](https://img.shields.io/badge/Platforms-Android%20%7C%20iOS-brightgreen.svg)
 
-A tiny **Android-style toast for Compose Multiplatform** (Android + iOS).
+A tiny **Kotlin Multiplatform (KMP)** toast library for **Compose Multiplatform** (Android + iOS).
 
 iOS has no native toast. This library fills that gap: on iOS it renders a transient
 overlay in a dedicated `UIWindow` above normal app content, with the window configured
@@ -19,7 +19,7 @@ not to receive touch events. On Android it delegates to the native
 
 ## Why CMPToaster?
 
-Some toast implementations **draw** the toast inside the Compose tree
+Some KMP toast implementations **draw** the toast inside the Compose tree
 (a `Popup`/overlay). That ties the toast to the composition: it may be covered by native
 dialogs, and navigation behavior depends on where the overlay is hosted.
 
@@ -32,7 +32,7 @@ toast itself is rendered **natively**:
   - does not need a Compose host for the toast overlay
 - **Android** — delegates to the native `android.widget.Toast`.
 
-In short: a Compose-facing API with platform-backed presentation.
+In short: a Kotlin Multiplatform toast with a Compose-facing API and platform-backed presentation.
 
 > Note: the iOS overlay is positioned near the bottom safe area and is not intended
 > to cover the software keyboard. Android keyboard behavior is handled by the native
