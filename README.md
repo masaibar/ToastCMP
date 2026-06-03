@@ -51,10 +51,6 @@ kotlin {
 }
 ```
 
-> Not yet published to Maven Central. For now, consume it via
-> [composite build](https://docs.gradle.org/current/userguide/composite_builds.html)
-> or copy the `toast/` module into your project.
-
 ## Usage
 
 ```kotlin
@@ -122,6 +118,12 @@ Run it:
 ./gradlew :toast:assemble                          # Android
 ./gradlew :toast:compileKotlinIosSimulatorArm64    # iOS (fast check)
 ```
+
+## Acknowledgements
+
+The logo includes the Android robot. The Android robot is reproduced or modified from
+work created and shared by Google and used according to terms described in the
+[Creative Commons 3.0 Attribution License](https://creativecommons.org/licenses/by/3.0/).
 
 ## License
 
